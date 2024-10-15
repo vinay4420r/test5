@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Submission</title>
+</head>
+<body>
+    <h1>Submit Your Paper</h1>
+    <form action="/" method="POST" enctype="multipart/form-data">
+        <label for="paper_title">Paper Title:</label>
+        <input type="text" id="paper_title" name="paper_title" required><br><br>
+
+        <label for="abstract">Abstract:</label><br>
+        <textarea id="abstract" name="abstract" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="research_area">Research Area:</label>
+        <input type="text" id="research_area" name="research_area" required><br><br>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required><br><br>
+
+        <h2>Author Information</h2>
+
+        <!-- Repeatable author fields -->
+        <fieldset>
+            <legend>Author 1</legend>
+            <label for="author_name_1">Name:</label>
+            <input type="text" id="author_name_1" name="author_name_1" required><br>
+
+            <label for="author_email_1">Email:</label>
+            <input type="email" id="author_email_1" name="author_email_1" required><br>
+
+            <label for="author_contact_1">Contact:</label>
+            <input type="text" id="author_contact_1" name="author_contact_1" required><br>
+
+            <label for="author_institute_1">Institute:</label>
+            <input type="text" id="author_institute_1" name="author_institute_1" required><br>
+        </fieldset>
+
+        <br>
+        <label for="file">Upload Paper:</label>
+        <input type="file" id="file" name="file" required><br><br>
+
+        <input type="submit" value="Submit Paper">
+    </form>
+</body>
+</html>
